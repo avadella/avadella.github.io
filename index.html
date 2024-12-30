@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="mediaQueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">                                                          <!-- possibly rename this lol --> 
+    <nav id="desktop-nav">                                                          
         <div class="logo">Anna Vadella</div>                                        <!-- !!change this!! -->
         <div>
             <ul class="nav-links">                                                  <!-- creating navigation at top of page -->
@@ -38,6 +38,23 @@
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/filler.png" alt="Filler Profile Picture">            <!-- !!change this!! -->
+        </div>
+        <div class="section__text">                                                 <!-- two underscores = part of BEM (Block Element Modifier) naming convention to separate block from element -->
+            <p class="section__text__p1">Hello! I'm</p>                             <!-- !!change this!! -->
+            <h1 class="title">Anna Vadella</h1>
+            <!-- <p class="section__text__p2">insert text here lol.</p>-->
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/CV.pdf')">Download CV</button>   <!-- !!change this!!... possibly! -->
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/anna-vadella-4214762a1/'"> 
+                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/avadella'">   
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
