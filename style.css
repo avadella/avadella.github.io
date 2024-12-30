@@ -1,5 +1,5 @@
-/*importing Roboto font*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*importing font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /*GENERAL*/
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Roboto", serif;                           /*default font family for body*/ 
+    font-family: "Poppins", serif;                           /*default font family for body*/ 
 }
 
 html {
@@ -32,7 +32,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 14vh;
 }
 
 .nav-links {
@@ -215,7 +215,7 @@ section {
 }
 
 .btn-color-1 {
-    border: rgb(53, 53, 53) 0.1 rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
     color: black;
 }
 
