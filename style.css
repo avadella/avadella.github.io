@@ -33,7 +33,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vh;
-    background-color: rgb(124, 185, 255);
+    background-color: rgb(92, 168, 255);
+    padding: 1rem;
 }
 
 .nav-links {
@@ -198,6 +199,7 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    background-color: rgb(92, 168, 255);
 }
 
 .btn-container {
