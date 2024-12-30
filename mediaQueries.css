@@ -2,4 +2,7 @@
     #desktop-nav {
         display: none;                              /*when viewport width is 1200px or less, #desktop-nav element will be hidden*/
     }
+    #hamburger-nav {
+        display: flex;
+    }
 }
