@@ -1,0 +1,5 @@
+@media screen and (max-width: 1200px) {             /*@ = used to define media query, @media rule allows for responsive CSS!*/
+    #desktop-nav {
+        display: none;                              /*when viewport width is 1200px or less, #desktop-nav element will be hidden*/
+    }
+}

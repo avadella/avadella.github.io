@@ -62,4 +62,23 @@ a:hover {
     cursor: default;                                        /*stops cursor from changing when hovering over logo feature*/
 }
 
-/*add the media query here, have to be at very bottom of this file after everything else is defined!!!*/
+/*NAVIGATION (hamburger-nav)*/
+#hamburger-nav {
+    display: none;                                         
+}
+
+.hamburger-menu {
+    position: relative;                                     /*element can be moved relative to normal position using top, bottom, L, R w/o affecting surrounding elements*/
+    display: inline-block;                                  /*behaves like an inline element but allowed to set properties typical of block-level elements like width, height*/
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*if needed, add the media query here, have to be at very bottom of this file after everything else is defined!!!*/
