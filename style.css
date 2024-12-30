@@ -185,6 +185,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 #socials-container {
@@ -215,9 +216,11 @@ section {
 
 .btn-color-1 {
     border: rgb(53, 53, 53) 0.1 rem solid;
+    color: black;
 }
 
 .btn-color-1:hover {
     cursor: pointer;
     background: rgb(0, 0, 0);
+    color: white;
 }
