@@ -183,14 +183,24 @@ section {
 .section__text_p1 {
     padding: 1.5rem;
     font-weight: 600;
-    text-align: center;
-    flex: 0 1 60%;
-    max-width: 60%;
+    align-self: center;
+    text-align: right;
+    flex: 1;
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
+}
+
+section .title::after {
+    width: 100px;
+    height: 4px;
+    background-color: #70bafb;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);                           /*shifts line to left by 50% of its own width, effectively centering it*/
+    border-radius: 2px;
 }
 
 #socials-container {
@@ -239,7 +249,7 @@ section {
 
 .arrow {
     position: absolute;
-    right: -10rem;
+    right: -2rem;
     bottom: 2.5rem;
 }
 
