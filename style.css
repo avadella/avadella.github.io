@@ -169,8 +169,8 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: auto 0;                                        /*auto --> automatically calculates margins so element is centered horizontally within its containing element*/
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -252,7 +252,7 @@ section .title::after {
 
 .arrow {
     position: absolute;
-    right: -0.1rem;
+    right: -0.01rem;
     bottom: 2.5rem;
 }
 
