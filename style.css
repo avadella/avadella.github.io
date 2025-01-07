@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: rgb(169, 169, 169);
+    color: rgb(223, 225, 228);
     /*text-decoration: underline;*/
     /*text-decoration-color: rgb(181, 181, 181);*/
     /*text-underline-offset: 1rem;*/
@@ -225,7 +225,7 @@ section .title::after {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem; 
+    margin-top: 1rem; 
 }
 
 .btn {
@@ -249,7 +249,7 @@ section .title::after {
 
 .arrow {
     position: absolute;
-    right: -2rem;
+    right: -1rem;
     bottom: 2.5rem;
 }
 
