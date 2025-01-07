@@ -162,6 +162,7 @@ section {
 #about {
     display: flex;
     justify-content: center;
+    align-items: center;  
     gap: 5rem;
     height: 80vh;
 }
@@ -173,19 +174,19 @@ section {
     margin: auto 0;                                        /*auto --> automatically calculates margins so element is centered horizontally within its containing element*/
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;                                        /* Prevents shrinking of the image */
 }
 
 .section__text {
     align-self: center;
     text-align: center;
+    flex: 1;
 }
 
 .section__text_p1 {
     padding: 1.5rem;
     font-weight: 600;
-    align-self: center;
     text-align: right;
-    flex: 1;
 }
 
 .title {
