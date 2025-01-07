@@ -150,8 +150,7 @@ a:hover {
 section {
     padding-top: 4vh;
     height: 96vh;
-    /*margin: 0 10rem;                                       /*0 = top-bottom, 10rem = left-right*/
-    margin: 0 auto;
+    margin: 0 10rem;                                       /*0 = top-bottom, 10rem = left-right*/
     max-width: 100%;
     box-sizing: border-box;                                /*width includes padding and border, so element won't exceed specified width or height*/
     min-height: fit-content;
