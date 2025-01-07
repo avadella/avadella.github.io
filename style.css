@@ -196,6 +196,7 @@ section {
 }
 
 section .title::after {
+    content: '';                                           /*content property must be specified for ::after*/
     width: 100px;
     height: 4px;
     background-color: #70bafb;
