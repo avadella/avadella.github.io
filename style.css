@@ -31,8 +31,9 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem;
     height: 12vh;
     background-color: #70bafb;
     background-color: rgb(112, 186, 251);
@@ -41,7 +42,7 @@ nav {
 .nav-links {
     gap: 2rem;                                              /*note: 1rem equals the font size of the root element!*/
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 a {
@@ -60,7 +61,7 @@ a:hover {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .logo:hover {   
@@ -148,6 +149,7 @@ a:hover {
 
 /*SECTIONS*/
 section {
+    position: relative; 
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;                                       /*0 = top-bottom, 10rem = left-right*/
@@ -156,16 +158,27 @@ section {
     min-height: fit-content;
 }
 
-.section-container {
-    display: flex;
+section::before {
+    content: '';                                            /*make sure pseudo-element is empty*/
+    position: absolute;                                     /*position pseudo-element absolutely within section*/
+    top: 0;
+    left: -10rem;       
+    right: -10rem;      
+    bottom: 0;
+    background-color: inherit;                              /*inherit background color of section*/
+    z-index: -1;                                            /*place pseudo-element behind other content*/
 }
 
-section:nth-of-type(odd) {
+section:nth-of-type(odd)::before {
     background-color: #f8f8f8;                            /*light gray for odd sections*/
 }
 
-section:nth-of-type(even) {
+section:nth-of-type(even)::before {
     background-color: #ffffff;                            /*white for even sections*/
+}
+
+.section-container {
+    display: flex;
 }
 
 /*ABOUT SECTION*/
@@ -265,14 +278,76 @@ section .title::after {
 
 .arrow {
     position: absolute;
-    right: 1rem;
+    right: -8rem;
     bottom: 2.5rem;
+}
+
+.about-containers {
+    gap: 2rem;
+    display: flex;
 }
 
 /*PROJECTS SECTION*/
 
 
-/*EXPERIENCE SECTION*/
+/*SKILLS SECTION*/
+#skills {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.skill-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.details-container {
+    flex: 1;
+    display: flex;
+    /*border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: (163, 163, 163);*/
+    text-align: center;
+}
+
+.skill-details-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 105%;
+}
+
+.skill-1, .skill-2 {
+    background-color: white;
+    border: 1px solid rgb(53, 53, 53); 
+    border-radius: 2rem;
+    padding: 0.7rem;
+    margin: 2rem;
+    margin-top: 2rem;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
 
 /*CONTACT SECTION*/
