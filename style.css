@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
@@ -17,6 +18,10 @@ html {
 
 p {                                                        
     color: rgb(85, 85, 85);                               /*change this later lol*/
+}
+
+section {
+    width: 100%;                                            /*ensures each section takes up full width*/
 }
 
 section:nth-of-type(odd) {
