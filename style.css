@@ -40,7 +40,7 @@ nav {
 .nav-links {
     gap: 2rem;                                              /*note: 1rem equals the font size of the root element!*/
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 a {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .logo:hover {   
@@ -201,11 +201,11 @@ section .title::after {
     width: 100px;
     height: 4px;
     background-color: #70bafb;
-    bottom: -10px;
+    bottom: -5px;
     left: 0;        
     right: 0;
     margin-left: auto;  
-    margin-right: auto; 
+    margin-right: auto;  
     border-radius: 2px;
     display: block; 
 }
