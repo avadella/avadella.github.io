@@ -186,7 +186,8 @@ section {
 .section__text_p1 {
     padding: 1.5rem;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
+    margin-top: 1rem; 
 }
 
 .title {
