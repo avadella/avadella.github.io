@@ -10,6 +10,7 @@
 
 body {
     font-family: "Poppins", serif;                           /*default font family for body*/ 
+    overflow-x: hidden;
 }
 
 html {
@@ -20,10 +21,12 @@ p {
     color: rgb(85, 85, 85);                               /*change this later lol*/
 }
 
+
 /*TRANSITION*/
 a, .btn {                                                   /*a = links, .btn = elements with class btn*/
     transition: all 300ms ease;                             /*ease --> starts transition slowly, then speeds up*/
 }
+
 
 /*NAVIGATION (desktop-nav)*/
 nav, .nav-links {
@@ -67,6 +70,7 @@ a:hover {
 .logo:hover {   
     cursor: default;                                        /*stops cursor from changing when hovering over logo feature*/
 }
+
 
 /*NAVIGATION (hamburger-nav)*/
 #hamburger-nav {
@@ -147,6 +151,7 @@ a:hover {
     transform: none;
 }
 
+
 /*SECTIONS*/
 section {
     position: relative; 
@@ -181,13 +186,14 @@ section:nth-of-type(even)::before {
     display: flex;
 }
 
+
 /*ABOUT SECTION*/
 #about {
     display: flex;
     justify-content: center;
     align-items: center;  
     gap: 5rem;
-    height: 80vh;
+    height: 85vh;
 }
 
 .section__pic-container {
@@ -198,6 +204,13 @@ section:nth-of-type(even)::before {
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     flex-shrink: 0;                                        /*prevents shrinking of the image*/
+    overflow: hidden;
+}
+
+.section__pic-container img {
+    width: 100%;                                           /*makes image fill container's width*/
+    height: 100%;                                          /*makes image fill container's height*/
+    object-fit: cover;                                     /*ensures the image covers without distortion*/
 }
 
 .section__text {
@@ -287,7 +300,217 @@ section .title::after {
     display: flex;
 }
 
+
+/*RESEARCH SECTION*/
+#research {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 0 2rem;
+}
+
+#research h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    color: black;
+}
+
+#research .section__text__p1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #494a4a;
+}
+
+.research-img {
+    width: 250px; 
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
+.research-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+#research .skills-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.research-wrapper {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    overflow-y: visible; /* Allow vertical scrolling if necessary */
+    margin-bottom: 0.1rem;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the content */
+}
+
+.research-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.2rem;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.research-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 250px;
+    max-width: 110%;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.research-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#research .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+
 /*PROJECTS SECTION*/
+#projects {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+#projects h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    color: black;
+}
+
+#projects .section__text__p1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #494a4a;
+}
+
+.project-img {
+    width: 100%; 
+    height: 12rem;
+    object-fit: cover;
+}
+
+.project-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+.projects-scroll-wrapper {
+    position: relative;
+    display: flex;
+    gap: 1.5rem; 
+    justify-content: flex-start;
+    padding: 1rem;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    margin-bottom: 0.1rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    flex-wrap: nowrap;
+
+    /*position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    gap: 3rem; 
+    padding: 1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 90%;
+    height: auto;*/
+}
+
+.projects-scroll-container {
+    /*display: flex;
+    padding: 1rem;
+    max-width: 1600px;
+    overflow-x: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+    height: 90%;*/
+
+    display: flex;
+    padding: 0.8rem;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    height: 100%;
+    min-width: 0;                                         /*prevents child elements from causing overflow*/
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-box {
+    flex: 0 0 auto;                                       /*113% = flex-basis, sets initial size before any growing or shrinking happens*/
+    width: 250px;
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#projects .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
 
 
 /*SKILLS SECTION*/
@@ -296,6 +519,7 @@ section .title::after {
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 
 .skill-sub-title {

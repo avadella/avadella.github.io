@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Anna Vadella</title>
+    <title>Anna Vadella Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css">
 </head>
@@ -14,6 +14,7 @@
         <div>
             <ul class="nav-links">                                                  <!-- creating navigation at top of page -->
                 <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <!--<li><a href="#experience">Experience</a></li>-->
@@ -31,6 +32,7 @@
             </div>
             <div class="menu-links">                                                <!-- links that are opened when toggleMenu is called -->
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>          <!-- when this div is clicked, toggleMenu() JavaScript function is called -->
+                <li><a href="#research" onclick="toggleMenu()">Research</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <!--<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>-->
@@ -42,7 +44,7 @@
     <!-- About Section -->
     <section id="about">
         <div class="section__pic-container">
-            <img src="./assets/WIP.png" alt="Filler Profile Picture">               <!-- !!change this!! -->
+            <img src="./assets/headshot.png" alt="Profile Picture">                     
         </div>
         <div class="section__text">                                                 <!-- two underscores = part of BEM (Block Element Modifier) naming convention to separate block from element -->
             <h1 class="title">Hello, I'm Anna! </h1>
@@ -59,19 +61,82 @@
                 <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/avadella'">   
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">         <!-- arrow to go to next section of page -->
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#research'">         <!-- arrow to go to next section of page -->
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h1 class="title">Research</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="research-wrapper">
+                    <div class="details-container">
+                        <div class="research-container">
+                            <a href="https://github.com/MMachado05/REU-2024" target="_blank" class="research-box">
+                                <img src="./assets/filler.png" alt="Filler Picture" class="research-img">
+                                <h2 class="research-title">PROJECT ONE</h2>
+                                <p class="research-sub-title"><em>LOCATION</em></p>
+                                <p>WRITE PROJECT DESCRIPTION HERE.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="research-container">
+                            <a href="https://github.com" target="_blank" class="research-box">
+                                <img src="./assets/filler.png" alt="Filler Picture" class="research-img">
+                                <h2 class="research-title">PROJECT TWO</h2>
+                                <p class="research-sub-title"><em>LOCATION</em></p>
+                                <p>WRITE PROJECT DESCRIPTION HERE.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">   
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-
+        <h1 class="title">Recent Projects</h1>
+        <div class="skills-details-container">
+            <div class="projects-scroll-wrapper">
+                <div class="details-container">
+                    <div class="projects-scroll-container">
+                        <a href="https://github.com" target="_blank" class="project-box">
+                            <img src="./assets/filler.png" alt="Filler Picture" class="project-img">
+                            <h2 class="project-title">PROJECT THREE</h2>
+                            <p class="project-sub-title"><em>LANGUAGE</em></p>
+                            <p>WRITE PROJECT DESCRIPTION HERE.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="projects-scroll-container">
+                        <a href="https://github.com" target="_blank" class="project-box">
+                            <img src="./assets/filler.png" alt="Filler Picture" class="project-img">
+                            <h2 class="project-title">PROJECT FOUR</h2>
+                            <p class="project-sub-title"><em>LANGUAGE</em></p>
+                            <p>WRITE PROJECT DESCRIPTION HERE.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-scroll-container">
+                    <a href="https://github.com" target="_blank" class="project-box">
+                        <img src="./assets/filler.png" alt="Filler Picture" class="project-img">
+                        <h2 class="project-title">PROJECT FIVE</h2>
+                        <p class="project-sub-title"><em>LANGUAGE</em></p>
+                        <p>WRITE PROJECT DESCRIPTION HERE.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">   
-
     </section>
-
+    
     <!-- Skills Section -->
     <section id="skills">
-        <h1 class="title">Skills</h1>
+        <h1 class="title">Relevant Skills</h1>
         <div class="skills-details-container">
             <div class="about-containers">
                 <div class="details-container">
