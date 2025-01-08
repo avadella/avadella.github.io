@@ -348,12 +348,13 @@ section .title::after {
 }
 
 .research-wrapper {
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    overflow-y: visible; /* Allow vertical scrolling if necessary */
+    overflow-x: hidden;                                     /*disable horizontal scrolling*/
+    overflow-y: visible;                                    
     margin-bottom: 0.1rem;
-    width: 100%; /* Full width */
+    margin-right: 1.5rem;
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: center; 
 }
 
 .research-container {
@@ -361,9 +362,9 @@ section .title::after {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    gap: 0.2rem;
+    gap: 1rem;
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 0 auto;
 }
 
@@ -396,7 +397,7 @@ section .title::after {
 
 #research .arrow {
     position: absolute;
-    right: 1rem;
+    right: 1.65rem;
     bottom: 2.5rem;
 }
 
@@ -490,7 +491,7 @@ section .title::after {
 }
 
 .project-box {
-    flex: 0 0 auto;                                       /*113% = flex-basis, sets initial size before any growing or shrinking happens*/
+    flex: 0 0 auto;                                       /*auto = flex-basis, sets initial size before any growing or shrinking happens*/
     width: 250px;
     text-align: center;
     border: 1px solid #d7dbd8;
@@ -508,7 +509,7 @@ section .title::after {
 
 #projects .arrow {
     position: absolute;
-    right: 1rem;
+    right: 1.65rem;
     bottom: 2.5rem;
 }
 
@@ -575,6 +576,12 @@ article .icon {
 article .icon:hover {
     transform: scale(1.2);
     transition: transform 0.3s, color 0.3s;
+}
+
+#skills .arrow {
+    position: absolute;
+    right: -8.5rem;
+    bottom: 2.5rem;
 }
 
 /*CONTACT SECTION*/
