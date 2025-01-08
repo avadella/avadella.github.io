@@ -421,9 +421,8 @@ section .title::after {
 }
 
 #projects .section__text__p1 {
-    font-size: 1.25rem;
-    font-weight: 500;
     color: #494a4a;
+    text-align: center;
 }
 
 .project-img {
@@ -584,4 +583,83 @@ article .icon:hover {
     bottom: 2.5rem;
 }
 
+
 /*CONTACT SECTION*/
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+#contact a:hover {
+    color: #70bafb;
+    transform: scale(1.2);
+    transition: transform 0.1s, color 0.1s;
+    font-weight: bold;
+}
+
+#contact .section__text__p1 {
+    text-align: center; 
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+#contact .arrow {
+    position: absolute;
+    right: -8.5rem;
+    bottom: 2.5rem;
+}
+
+
+/*FOOTER SECTION*/
+footer {
+    height: 20vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer nav {
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer a:hover {
+    color: #70bafb;
+    transform: scale(1.2);
+    transition: transform 0.1s, color 0.1s;
+}
