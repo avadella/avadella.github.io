@@ -1,8 +1,108 @@
+@media screen and (max-width: 1400px) {             /*@ = used to define media query, @media rule allows for responsive CSS!*/
+    #about {
+        height: 83vh;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px) {             /*@ = used to define media query, @media rule allows for responsive CSS!*/
     #desktop-nav {
         display: none;                              /*when viewport width is 1200px or less, #desktop-nav element will be hidden*/
     }
     #hamburger-nav {
         display: flex;
+        z-index: 9999;     
     }
+    #experience, .experience-details-container {
+        margin-top: 2rem;
+    }
+    #about, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        margin-bottom: 0rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {             /*@ = used to define media query, @media rule allows for responsive CSS!*/
+    #contact, footer {
+        height: 40vh;
+    }
+    #about {
+        height: 83vh;
+        margin-bottom: 0.5rem;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer {
+        margin-top: -1.5rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: -1.5rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.3rem;
+        text-align: center;
+    }
+    .section__text_p1 {
+        font-size: 1.25rem;
+    }
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0.3rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .about-containers {
+        text-align: justify;
+    }
+    .research-container {
+        display: flex;
+        padding: 0.2rem;
+        width: 80%;
+    }
+    .projects-scroll-container {
+        display: flex;
+        padding: 0.1rem;
+    }
+    
 }
