@@ -334,9 +334,9 @@ section .title::after {
 
 .research-sub-title {
     color: #70bafb;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0.1rem;
+    font-weight: 550;
+    font-size: 0.95rem;
+    padding: 0.09rem;
 }
 
 #research .experience-details-container {
@@ -377,6 +377,7 @@ section .title::after {
     flex-grow: 1;
     min-height: 250px;
     max-width: 110%;
+    width: 525px; 
     border: 1px solid #d7dbd8;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -420,7 +421,7 @@ section .title::after {
     font-weight: 700;
     color: black;
     padding: 0.5rem;
-    margin-top: 7rem;
+    margin-top: 9.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,6 +501,7 @@ section .title::after {
 .project-box {
     flex: 0 0 auto;                                       /*auto = flex-basis, sets initial size before any growing or shrinking happens*/
     width: 300px;
+    height: 500px;
     text-align: center;
     border: 1px solid #d7dbd8;
     border-radius: 0.5rem;
