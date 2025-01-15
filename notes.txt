@@ -1,0 +1,107 @@
+General Notes
+- ALT + SHIFT + DOWN ARROW = copy and pastes line
+- CSS = Cascading Style Sheets
+- Lorem50 + enter = produce 50 words of Lorem ipsum text
+
+index.html Notes
+- shift, exclamation mark, choose the first option --> provides basic "boiler plate" html syntax
+- <!DOCTYPE html> --> defines document type 
+- <html lang="en"> --> indicates that language of document is in English
+- head section of document contains meta-info about page (like character set, viewport settings, title), NOT directly displayed
+- <meta http-equiv="X-UA-Compatible" content="IE-edge"/> --> controls how Internet Explorer (IE) renders web pages
+- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> --> important for responsive web design 
+    - controls how page is displayed on different devices (especially on mobile)!
+- <title> --> appears in the browser's tab when the page is opened
+- <link rel="stylesheet" href="style.css"> --> links an external CSS file to HTML document
+    -  rel = specifies relationship between current document and linked resource 
+        - in this case, rel tells browseer that linked file is a CSS stylesheet, which contains styling rules for webpage
+    - href = specifies location of resource being linked to
+        - in this case, indicates browser should look for file called style.css in same directory as current HTML file 
+            - if file is located in another directory, path would need to reflect that!
+- <nav> --> uesd to define section of page that contains navigation links
+    - typically placed near the top of the body to make navigation links easily accessible to users
+- <script> --> used to include JavaScript in HTML document
+- <div> --> block-level container used to group elements or content together
+- <ul> --> unordered list (list with bullet points)
+- <li> --> list item
+    - in this case, it's a container for each link in the navigation menu!
+<a href="#about">About</a> --> used to create a hyperlink
+    - href = creates an anchor link that will scroll the page to the element with the id="about" when clicked
+    - About = text that the user will click on
+- <div class="..."> --> outer container that holds everything related to the class
+- onclick="toggleMenu()" --> when div is clicked, toggleMenu() JavaScript function is called
+- BEM (Block Element Modifier)
+    - single underscore --> typically used in other naming conventions to separate words or parts of class name
+    - double underscore --> convention used in BEM to separate the block from the element
+    - Example: section__text__p1 --> section = block, text = element inside block, p1 = modifier/variation of element
+- location.href --> property of window.location object in JavaScript, uesd to get or set current URL (location) of web page in browser
+    - gives entire URL of the current page, or can be used to navigate to a different URL
+- 
+
+style.css Notes
+- * = universal selector --> selects all elements in document, regardless of type or class
+    - used to apply styles universally across a page
+- p = selector which targets all <p> elements in HTML documents
+    - note that <p> element is used to define paragraphs in HTML!
+- transition = property that allows for smooth, gradual changes/animations when certain properties of an element change
+    - all = all properties that can transition will be affected
+    - 300ms = duration of transition effect, property change will take 300 milliseconds to complete
+    - ease = timing function for transition, starts transition slowly, then speeds up
+- nav --> refers to <nav> element in HTML document, first declared on line 11
+- display = property in CSS that defines how an element behaves within the layout
+    - flex --> value that turns container element into flex container, enabling flexbox layout model
+        - when an element is set to display: flex, its direct children become flex items, which means:
+            - they will be arranged along a row by default or a column
+            - the spacing and alignment of these children is easily controlled using other flex properties!
+- align-items = property used in flexbox/grid layout, defines how items inside flex container should be aligned along cross axis 
+- height = property used to set height of an element
+    - vh stands for viewport height --> one vh unit = 1% of height of the viewport (viewport = visible area of browser window)
+- gap = property used in flexbox/grid layouts to control space between items
+- rem --> root em = relative unit of measurement in CSS
+    - relative to font-size of root element, usually defined as 16px by default in most browsers 
+        - so 1rem equals the font size of the root element!
+- list-style = property used to control appearance of list items 
+    - value: none --> removes any default bullet points, numbering, or other markers from list items (<li>)
+- CSS Selectors:
+    - . = class selector --> used to select elements by their class
+    - # = ID selector --> used to select elements by their ID
+        - typically usde to style a single, unique element on a page
+        - note: should NOT have multiple elements with the same ID in a well-structured HTML doc
+    - * = universal selector --> selects and applies styles (unless overriden by more specific selectors) to all elements on a page
+    - a = element selector --> used to target all anchor (<a>) elements on a page
+        - anchor tag used to define hyperlinks, so a selector allows for stylization of all links on a page
+    - a: = pseudo-class selector --> used to target psuedo-classes of anchor (<a>) elements
+        - note: pseudo-class = keyword that targets elements in a certain state (example, when a link is being hovered over)
+- position: relative --> positions an element relative to its normal position in document flow
+- display: inline-block --> property to make an element behave like an inline element while maintaining block-level behavior 
+    - an element with this property will: 
+        - stay in the same line as other inline or inline-block elements
+        - respect block-level properties like width, height, margin, padding, which inline elements normally do not 
+- flex-direction --> defines direction in which flex items are laid out 
+    - column = makes items inside flex container stack vertically (one on top of the other)
+- cursor: pointer --> property to change cursor to "hand" when user hovers over element
+- width: 100% --> sets width of each <span> element to 100% of its parent container's width
+- position: absolute --> elements positioned relative to its nearest position ancestor, if not ancestor, positioned relative to initial containing block
+- top: 100% = positions element 100% from the top of its containing element (makes element appear directly below its parent element)
+- max-height: 0 --> makes element invisible by collapsing it vertically
+- overflow: hidden --> ensures any content that exceeds bounds of an element is hiddden
+- span:first-child --> specifically selects first child element of class
+- opacity: 0 --> makes specified element completely invisible
+- box-sizing --> controls how the width and height of an element are calculated
+    - border-box = padding and border are included in width and height
+-
+
+mediaQueries.css Notes
+- @media --> rule used to apply styles conditionally, depending on certain criteria
+    - @ = used to define media query
+    - media query = allows for application of different styles based on device's characteristics or viewport properties (screen size, resolution, device orientation)
+    - @media = rule that allows for responsive CSS (styles can adapt to different screen sizes and other conditions)
+- screen and (max-width: 1200px) --> specifies that the style inside this query should only apply to screens
+    - max-width = condition that applies styles only when viewport is 1200px or less 
+- 
+
+script.js Notes
+- querySelector() --> selects first element in HTML doc that matches CSS selector passed to it
+- classList --> property that provides methods for working w/ classes on an element
+- toggle("open") --> check if class "open" is already applied to element
+    - if class "open" is present, remove it, otherwise, add it
